@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/03/19 23:20:41.000.704,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/15 21:58:13.000.261,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/05 20:28:55.000.234,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/22 16:02:34.000.561,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/14 13:04:15.000.297,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/14 13:24:26.000.290,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/14 13:25:04.000.410,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/04/09 22:38:36.000.666,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/03/18 20:29:59.000.260,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/26 21:58:32.000.514,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/07 13:53:43.000.073,=C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/07 14:23:09.000.874,C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Satic\Desktop\MinHook\Demo\Unit1.pas</Transaction>
+    <Transaction>2020/05/07 14:23:09.000.874,C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Satic\Desktop\MinHook\Demo\Unit1.dfm</Transaction>
+    <Transaction>2020/05/07 14:23:11.000.066,C:\Users\Satic\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Satic\Desktop\MinHook\Demo\Project1.dproj</Transaction>
+    <Transaction>2020/05/07 14:25:17.000.578,=C:\Users\Satic\Desktop\MinHook\src\MinHook.pas</Transaction>
+    <Transaction>2020/05/07 15:54:31.000.823,=C:\Users\Satic\Desktop\MinHook\Demo\Unit2.pas</Transaction>
+    <Transaction>2020/05/07 15:55:08.000.019,C:\Users\Satic\Desktop\MinHook\src\HookUtils.pas=C:\Users\Satic\Desktop\MinHook\Demo\Unit2.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
