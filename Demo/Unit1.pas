@@ -10,7 +10,9 @@ uses
 type
   TForm1 = class(TForm)
     Button1: TButton;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,9 +43,48 @@ begin
   if (MH_Initialize() <> MH_OK) then
     Exit;
 
-  // you can use the new helper function like this.
+  // 方法一
   if (MH_CreateHookApiEx('user32', 'MessageBoxW', @MessageBoxWHookProc,
     @MessageBoxWNextHook, pTarget) <> MH_OK) then
+    Exit;
+  // 方法二
+  // pTarget := GetProcAddress(LoadLibrary('user32.dll'), 'MessageBoxW');
+  // if (MH_CreateHook(pTarget, @MessageBoxWHookProc, @MessageBoxWNextHook) <>
+  // MH_OK) then
+  // Exit;
+
+  if (MH_EnableHook(pTarget) <> MH_OK) then
+    Exit;
+
+  // test the target API
+  MessageBoxW(0, 'aaa', 'hi', 0);
+
+  if (MH_DisableHook(pTarget) <> MH_OK) then
+    Exit;
+
+  // the message should be changed
+  MessageBoxW(0, 'aaa', 'hi', 0);
+
+  if (MH_Uninitialize() <> MH_OK) then
+    Exit;
+
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+  pTarget: Pointer;
+begin
+  if (MH_Initialize() <> MH_OK) then
+    Exit;
+
+  // 方法一
+  // if (MH_CreateHookApiEx('user32', 'MessageBoxW', @MessageBoxWHookProc,
+  // @MessageBoxWNextHook, pTarget) <> MH_OK) then
+  // Exit;
+  // 方法二
+  pTarget := GetProcAddress(LoadLibrary('user32.dll'), 'MessageBoxW');
+  if (MH_CreateHook(pTarget, @MessageBoxWHookProc, @MessageBoxWNextHook) <>
+    MH_OK) then
     Exit;
 
   if (MH_EnableHook(pTarget) <> MH_OK) then
